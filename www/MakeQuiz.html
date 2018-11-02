@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>PhoneGap</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script type="text/javascript" src="components/loader.js"></script>
+    <link rel="stylesheet" type="text/css" href="components/loader.css">
+    <link rel="stylesheet" href="phonegap-demo/master.css" type="text/css" media="screen" title="no title">
+    <script type="text/javascript">
+        document.addEventListener("deviceready", onDeviceReady, false);
+        function onDeviceReady(){
+            console.log("PhoneGap is ready.");
+        }
+    </script>
+    <script type="text/javascript" charset="utf-8" src="phonegap-demo/main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    <script src="phonegap-demo/MakeQuiz.js"></script>
+  </head>
+  <body onload="init();" id="menu" class="theme">
+    
+<div class="cp_ipselect cp_sl01">
+<select required id="pulldown">
+	<option value="" hidden>Subject</option>
+	<option value="1">1_物理</option>
+	<option value="2">2_化学</option>
+	<option value="3">3_生物</option>
+	<option value="4">4_衛生</option>
+	<option value="5">5_薬理</option>
+	<option value="6">6_薬剤</option>
+	<option value="7">7_薬物治療</option>
+	<option value="8">8_法規</option>
+	<option value="9">9_実務</option>
+	<option value="CodeTest">CodeTest</option>
+	<option value="Other">Other</option>
+</select>
+</div>    
+<input type="button" value="更新" onclick="UpdateQnum('pulldown');">
+ <div id="Qnumber" class="info"></div>
+ <div class="cp_iptxt">
+	<input type="text" placeholder="Question" id="quiz">
+	<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+</div>    
+
+<div class="cp_iptxt">
+	<input type="text" placeholder="Answer" id="ans">
+	<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+</div>    
+<div class="cp_iptxt">
+	<input type="text" placeholder="Comment" id="com">
+	<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+</div>    
+<div class="cp_iptxt">
+	<input type="text" placeholder="Picture" id="pict">
+	<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+</div>   
+
+<div class="cp_ipselect cp_sl01">
+<select required id="alter">
+	<option value="" hidden>Subject</option>
+	<option value="0">0</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+</select>
+</div>  
+ <div class="cp_iptxt">
+	<input type="text" placeholder="al1" id="al1">
+	<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+</div>  
+<div class="cp_iptxt">
+	<input type="text" placeholder="al2" id="al2">
+	<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+</div>   
+<div class="cp_iptxt">
+	<input type="text" placeholder="al3" id="al3">
+	<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+</div>   
+<div class="cp_iptxt">
+	<input type="text" placeholder="al4" id="al4">
+	<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+</div>   
+<div class="cp_iptxt">
+	<input type="text" placeholder="al5" id="al5">
+	<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+</div>   
+ 
+<a href="#" class="cp_btn" onclick="WriteDB();">登録</a>
+  </body>
+</html>

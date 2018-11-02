@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>PhoneGap</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script type="text/javascript" src="components/loader.js"></script>
+    <link rel="stylesheet" type="text/css" href="components/loader.css">
+    <link rel="stylesheet" href="phonegap-demo/master.css" type="text/css" media="screen" title="no title">
+    <script type="text/javascript">
+        document.addEventListener("deviceready", onDeviceReady, false);
+        function onDeviceReady(){
+            console.log("PhoneGap is ready.");
+        }
+    </script>
+    <script type="text/javascript" charset="utf-8" src="phonegap-demo/main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    <script src="phonegap-demo/emer.js"></script>
+  </head>
+  <body onload="init();" id="menu" class="theme">
+    <div id="Qnumber" class="info"></div>
+    <div id="score" class="info"></div>
+    <div id="question" class="info"><p>Nextを押して問題開始</p></div>
+    <div id="picture" class="info"></div>
+    <div id="al1" class="alts" class="info"></div>
+    <div id="al2" class="alts" class="info"></div>
+    <div id="al3" class="alts" class="info"></div>
+    <div id="al4" class="alts" class="info"></div>
+    <div id="al5" class="alts" class="info"></div>
+    <div id="al6" class="alts" class="info"></div>
+    <div id="al7" class="alts" class="info"></div>
+    <div id="al8" class="alts" class="info"></div>
+    <div id="al9" class="alts" class="info"></div>
+    <div id="al10" class="alts" class="info"></div>
+    <div id="al11" class="alts" class="info"></div>
+    <div id="al12" class="alts" class="info"></div>    
+    <div id="answer" class="info"></div>
+    <div id="comment" class="info"></div>
+    <a class="btn large" href="#" onclick="ShowAllAnswer()">Answer</a>
+    <a class="btn large" href="#" onclick="AllUpdate()">Next</a>
+    <a class="btn large" href="#" onclick="CheckOn()">check_on</a>
+    <a class="btn large" href="#" onclick="CheckOff()">check_off</a>
+    </body>
+</html>

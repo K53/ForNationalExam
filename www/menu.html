@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>PhoneGap</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script type="text/javascript" src="components/loader.js"></script>
+    <link rel="stylesheet" type="text/css" href="components/loader.css">
+    <link rel="stylesheet" href="phonegap-demo/master.css" type="text/css" media="screen" title="no title">
+    <script type="text/javascript">
+        document.addEventListener("deviceready", onDeviceReady, false);
+        function onDeviceReady(){
+            console.log("PhoneGap is ready.");
+        }
+    </script>
+    <script type="text/javascript" charset="utf-8" src="phonegap-demo/main.js"></script>
+  </head>
+
+
+
+  <body onload="init();" id="menu" class="theme">
+    <h1>To pass exam!</h1>
+    <div id="info">
+        <h4>科目選択</h4>
+     </div>
+    <a href="1phy.html" class="btn large">1. 物理</a>
+    <a href="#" class="btn large">2. 化学</a>
+    <a href="3bio.html" class="btn large">3. 生物</a>
+    <a href="4hyg.html" class="btn large">4. 衛生</a>
+    <a href="5pha.html" class="btn large">5. 薬理</a>
+    <a href="#" class="btn large">6. 薬剤</a>
+    <a href="#" class="btn large">7. 病態・薬物治療</a>
+    <a href="#" class="btn large">8. 法規・倫理</a>
+    <a href="#" class="btn large">9. 実務</a>
+    <a href="emer.html" class="btn large">Emergency</a>
+  </body>
+</html>
